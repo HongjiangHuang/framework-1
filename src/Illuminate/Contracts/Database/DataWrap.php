@@ -2,7 +2,9 @@
 
 namespace Illuminate\Contracts\Database;
 
-interface DataWrap extends \ArrayAccess
+use Illuminate\Contracts\Support\Arrayable;
+
+interface DataWrap extends \ArrayAccess, Arrayable
 {
     public function __construct($attributes);
 

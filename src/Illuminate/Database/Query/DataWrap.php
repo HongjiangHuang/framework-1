@@ -117,4 +117,14 @@ class DataWrap implements DataWrapContracts
     {
         return json_encode($this->attributes);
     }
+
+    /**
+     * Get the instance as an array.
+     *
+     * @return array
+     */
+    public function toArray()
+    {
+        return $this->attributes;
+    }
 }

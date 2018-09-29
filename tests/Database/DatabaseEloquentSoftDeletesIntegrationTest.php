@@ -614,6 +614,7 @@ class DatabaseEloquentSoftDeletesIntegrationTest extends TestCase
     }
 
     /**
+     * @group db1
      * @expectedException \BadMethodCallException
      */
     public function testMorphToWithBadMethodCall()

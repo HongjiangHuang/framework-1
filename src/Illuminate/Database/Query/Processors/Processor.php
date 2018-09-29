@@ -16,11 +16,14 @@ class Processor
      */
     public function processSelect(Builder $query, $results)
     {
+        var_dump($results);
         if (is_array($results)) {
             foreach ($results as $key => $result) {
                 $results[$key] = new DataWrap((array) $result);
             }
         }
+
+        dd($results);
 
         return $results;
     }
